@@ -6,7 +6,6 @@
   <title>Dein Barbershop</title>
   <link rel="stylesheet" href="style.css">
   <meta name="description" content="Ein moderner Barbershop – persönliche Beratung, präzise Haarschnitte und hochwertige Bartpflege auf einer übersichtlichen Ein‑Seiten‑Website.">
-
 </head>
 <body>
   <header class="site-header">
@@ -26,8 +25,9 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
+  <section class="hero" style="position: relative; overflow: hidden;">
+    <div class="container" style="position: relative; z-index: 1;">
+      <img src="images/logo.png" alt="" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 80%; opacity: 0.15; z-index: 0;">
       <h2>Dein Stil, mein Handwerk</h2>
       <p>Erlebe individuelle Haarschnitte, präzise Rasuren und gepflegte Bärte in entspannter Atmosphäre.</p>
       <a href="#contact" class="btn">Termin vereinbaren</a>
@@ -57,10 +57,6 @@
           <h3>Kombipaket</h3>
           <p>Haarschnitt und Bartpflege im attraktiven Kombi‑Angebot.</p>
         </li>
-        <li>
-          <h3>Styling&nbsp;&amp;&nbsp;Produkte</h3>
-          <p>Individuelle Stylingberatung und hochwertige Produkte für zu Hause.</p>
-        </li>
       </ul>
     </div>
   </section>
@@ -78,19 +74,15 @@
         <tbody>
           <tr>
             <td>Herrenhaarschnitt</td>
-            <td>€20</td>
+            <td>30 €</td>
           </tr>
           <tr>
             <td>Bartpflege&nbsp;&amp;&nbsp;Rasur</td>
-            <td>€15</td>
+            <td>25 €</td>
           </tr>
           <tr>
-            <td>Kombipaket</td>
-            <td>€30</td>
-          </tr>
-          <tr>
-            <td>Styling&nbsp;&amp;&nbsp;Produkte</td>
-            <td>€10</td>
+            <td>Kombipaket (Schnitt&nbsp;+&nbsp;Bart)</td>
+            <td>50 €</td>
           </tr>
         </tbody>
       </table>
@@ -101,24 +93,18 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Kontakt&nbsp;&amp;&nbsp;Öffnungszeiten</h2>
-      <p><strong>Adresse:</strong> Musterstraße&nbsp;1, 12345&nbsp;Musterstadt</p>
-      <p><strong>Telefon:</strong> 01234&nbsp;/&nbsp;567890</p>
-      <p><strong>E‑Mail:</strong> <a href="mailto:info@deinbarbershop.de">info@deinbarbershop.de</a></p>
-      <p><strong>Öffnungszeiten:</strong></p>
-      <ul class="opening-hours">
-        <li>Mo–Fr: 9–18&nbsp;Uhr</li>
-        <li>Sa: 10–14&nbsp;Uhr</li>
-        <li>So: geschlossen</li>
-      </ul>
-      <a href="mailto:info@deinbarbershop.de" class="btn">Termin per E‑Mail vereinbaren</a>
+      <p><strong>Adresse:</strong> Wesselbend 71b, 4731 Eynatten, Belgien</p>
+      <p><strong>Telefon:</strong> <a href="tel:017684981210">0176 84981210</a></p>
+      <p><strong>E‑Mail:</strong> <a href="mailto:25shain@googlemail.com">25shain@googlemail.com</a></p>
+      <p><strong>Öffnungszeiten:</strong> Nur nach Terminvereinbarung</p>
+      <a href="https://dein-buchungslink.example" class="btn" target="_blank" rel="noopener">Jetzt Termin anfragen</a>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy;&nbsp;2025 Dein&nbsp;Barbershop. Alle Rechte vorbehalten.</p>
+      <p>&copy; 2025 Dein Barbershop. Alle Rechte vorbehalten.</p>
     </div>
   </footer>
-
 </body>
 </html>
