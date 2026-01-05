@@ -26,10 +26,12 @@
 
   <section class="hero" style="position: relative; overflow: hidden;">
     <div class="container" style="position: relative; z-index: 1;">
-      <img src="images/logo.png" alt="" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 80%; opacity: 0.15; z-index: 0;">
+      <!-- Add pointer-events: none to ensure the overlay logo doesn't block clicks on the booking button -->
+      <img src="images/logo.png" alt="" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 80%; opacity: 0.15; z-index: 0; pointer-events: none;">
       <h2>Dein Stil, mein Handwerk</h2>
       <p>Erlebe individuelle Haarschnitte, präzise Rasuren und gepflegte Bärte in entspannter Atmosphäre.</p>
-      <a href="https://tidycal.com/25shain" class="btn" rel="noopener">Termin vereinbaren</a>
+      <!-- Elevate the button above other elements so it remains clickable -->
+      <a href="https://tidycal.com/25shain" class="btn" rel="noopener" style="position: relative; z-index: 2;">Termin vereinbaren</a>
     </div>
   </section>
 
